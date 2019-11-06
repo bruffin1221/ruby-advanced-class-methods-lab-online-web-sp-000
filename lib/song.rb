@@ -107,27 +107,7 @@ class Song
   end
 
   def self.new_from_filename(artist_name, name)
-    song=self.new
-    song="#{artist_name}-#{name}.mp3"
-    song
-    song.split=song.name
+    
   end
 
-
 end
-
-s = Song.new
-s.name = "The Ship Song"
-s.artist_name = "Nick Cave"
-s.save
-
-s=Song.find_by_name("June")
-s
-
-s=Song.create_by_name("Brown")
-s
-
-s=Song.new_from_filename("Michael Jackson","Thriller")
-
-
-song.artist_name
